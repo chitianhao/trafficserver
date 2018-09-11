@@ -56,6 +56,8 @@ libtsutil_la_SOURCES = \
 	AcidPtr.h \
 	Arena.cc \
 	Arena.h \
+	ArgParser.cc \
+	ArgParser.h \
 	BaseLogFile.cc \
 	BaseLogFile.h \
 	Bitops.cc \
@@ -267,6 +269,7 @@ test_tslib_LDADD = libtsutil.la $(top_builddir)/iocore/eventsystem/libinkevent.a
 test_tslib_SOURCES = \
 	unit-tests/unit_test_main.cc \
 	unit-tests/test_AcidPtr.cc \
+	unit-tests/test_ArgParser.cc \
 	unit-tests/test_BufferWriter.cc \
 	unit-tests/test_BufferWriterFormat.cc \
 	unit-tests/test_Extendible.cc \
